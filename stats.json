@@ -1,0 +1,100 @@
+{
+  "assetsByChunkName": {
+    "path---docs-getting-started-installation": [
+      "path---docs-getting-started-installation-576df58ec535058410b9.js",
+      "path---docs-getting-started-installation-576df58ec535058410b9.js.map"
+    ],
+    "path---docs-getting-started-publishing": [
+      "path---docs-getting-started-publishing-81e965d13db87ffaaa81.js",
+      "path---docs-getting-started-publishing-81e965d13db87ffaaa81.js.map"
+    ],
+    "path---docs-getting-started-creating-site": [
+      "path---docs-getting-started-creating-site-a58a696879a0177d0220.js",
+      "path---docs-getting-started-creating-site-a58a696879a0177d0220.js.map"
+    ],
+    "path---docs-api-gatsby-config": [
+      "path---docs-api-gatsby-config-ef00783022710fc268ce.js",
+      "path---docs-api-gatsby-config-ef00783022710fc268ce.js.map"
+    ],
+    "component---node-modules-brainhubeu-gatsby-docs-kit-src-templates-default-js": [
+      "component---node-modules-brainhubeu-gatsby-docs-kit-src-templates-default-js-c99649715d595a1f83be.js",
+      "component---node-modules-brainhubeu-gatsby-docs-kit-src-templates-default-js-c99649715d595a1f83be.js.map"
+    ],
+    "path---docs-guides-custom-gatsby-page": [
+      "path---docs-guides-custom-gatsby-page-9251806a3cb515406d7b.js",
+      "path---docs-guides-custom-gatsby-page-9251806a3cb515406d7b.js.map"
+    ],
+    "path---": [
+      "path----4ecb9a4ac868d4cedb81.js",
+      "path----4ecb9a4ac868d4cedb81.js.map"
+    ],
+    "path---docs-api-pages-config": [
+      "path---docs-api-pages-config-87134b8f8237b6d3fc68.js",
+      "path---docs-api-pages-config-87134b8f8237b6d3fc68.js.map"
+    ],
+    "path---docs-api-cli-commands": [
+      "path---docs-api-cli-commands-585552f43545f9ce6f3e.js",
+      "path---docs-api-cli-commands-585552f43545f9ce6f3e.js.map"
+    ],
+    "path---docs-guides-markdown-features": [
+      "path---docs-guides-markdown-features-b11c0bf4b264cba52167.js",
+      "path---docs-guides-markdown-features-b11c0bf4b264cba52167.js.map"
+    ],
+    "path---docs-guides-custom-markdown-pages": [
+      "path---docs-guides-custom-markdown-pages-182ab0f811f48a3df117.js",
+      "path---docs-guides-custom-markdown-pages-182ab0f811f48a3df117.js.map"
+    ],
+    "path---landing": [
+      "path---landing-a0e39f21c11f6a62c5ab.js",
+      "path---landing-a0e39f21c11f6a62c5ab.js.map"
+    ],
+    "path---index": [
+      "path---index-fabf0a82e327c1d00460.js",
+      "path---index-fabf0a82e327c1d00460.js.map"
+    ],
+    "component---src-pages-landing-js": [
+      "component---src-pages-landing-js-5b762e93d6d99c1740d4.js",
+      "component---src-pages-landing-js-5b762e93d6d99c1740d4.js.map"
+    ],
+    "component---src-pages-404-js": [
+      "component---src-pages-404-js-4503918ea3a16cfcdb75.js",
+      "component---src-pages-404-js-4503918ea3a16cfcdb75.js.map"
+    ],
+    "commons": [
+      "commons-54dfcbc96f9f630b06be.js",
+      "build-js-styles.css",
+      "commons-54dfcbc96f9f630b06be.js.map",
+      "build-js-styles.css.map"
+    ],
+    "path---404-html": [
+      "path---404-html-a0e39f21c11f6a62c5ab.js",
+      "path---404-html-a0e39f21c11f6a62c5ab.js.map"
+    ],
+    "path---docs-guides-custom-layout": [
+      "path---docs-guides-custom-layout-b82706ae7ff2eb6433c1.js",
+      "path---docs-guides-custom-layout-b82706ae7ff2eb6433c1.js.map"
+    ],
+    "path---docs-getting-started-introduction": [
+      "path---docs-getting-started-introduction-74d57b7095a8f22aa0a6.js",
+      "path---docs-getting-started-introduction-74d57b7095a8f22aa0a6.js.map"
+    ],
+    "component---node-modules-brainhubeu-gatsby-docs-kit-src-layouts-default-js": [
+      "component---node-modules-brainhubeu-gatsby-docs-kit-src-layouts-default-js-4962438c4763021f5892.js",
+      "component---node-modules-brainhubeu-gatsby-docs-kit-src-layouts-default-js-4962438c4763021f5892.js.map"
+    ],
+    "app": [
+      "app-5891205f2851ea94a06f.js",
+      "build-js-styles.css",
+      "app-5891205f2851ea94a06f.js.map",
+      "build-js-styles.css.map"
+    ],
+    "path---404": [
+      "path---404-a0e39f21c11f6a62c5ab.js",
+      "path---404-a0e39f21c11f6a62c5ab.js.map"
+    ],
+    "path---docs-guides-custom-markdown-template": [
+      "path---docs-guides-custom-markdown-template-46738c13c0c3d8e2c90a.js",
+      "path---docs-guides-custom-markdown-template-46738c13c0c3d8e2c90a.js.map"
+    ]
+  }
+}
