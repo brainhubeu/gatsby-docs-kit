@@ -34,7 +34,7 @@ function pluginConfigFactory(config) {
       options: {
         plugins: [
           {
-            resolve: 'gatsby-docs-kit',
+            resolve: '@brainhubeu/gatsby-docs-kit',
             options: {
               config: config.config,
             },
