@@ -19,10 +19,10 @@ Ensure you have the latest version of [Node](https://nodejs.org/en/download/) in
 Clone starter repository:
 
 ```bash
-git clone <PATH - TO BE DONE> docs-www
+git clone git@github.com:brainhubeu/gatsby-docs-kit-starter.git docs-www && cd docs-www && rm -rf .git
 ```
 
-Then enter `docs-www` directory and run:
+Then run:
 
 ```bash
 yarn install

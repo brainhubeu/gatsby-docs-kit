@@ -1,0 +1,42 @@
+- title: Home
+  dir: ./src
+  url: /
+  file: pages/landing.js
+
+- title: DOCS
+  dir: ../docs
+  url: docs
+  sidemenu:
+    - title: Getting Started
+      dir: getting-started
+      items:
+        - title: Overview
+          file: introduction.md
+        - title: Installation
+          file: installation.md
+        - title: Creating your site
+          file: creating-site.md
+        - title: Publishing your site
+          file: publishing.md
+    - title: Guides
+      dir: guides
+      items:
+        - title: Markdown features
+          file: markdown-features.md
+        - title: Custom markdown pages
+          file: custom-markdown-pages.md
+        - title: Custom Gatsby page
+          file: custom-gatsby-page.md
+        - title: Custom Markdown template
+          file: custom-markdown-template.md
+        - title: Custom layout
+          file: custom-layout.md
+    - title: API
+      dir: api
+      items:
+        - title: CLI commands
+          file: cli-commands.md
+        - title: Navigation config
+          file: pages-config.md
+        - title: Gatsby config
+          file: gatsby-config.md
