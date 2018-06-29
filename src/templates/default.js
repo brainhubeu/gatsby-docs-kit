@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Fragment } from 'react';
 import _ from 'lodash';
 import ReactDOM from 'react-dom';
 import PropTypes from 'prop-types';
@@ -8,6 +8,8 @@ import {
   LiveError,
   LivePreview,
 } from 'react-live';
+import Main from '../components/main/Main';
+import Footer from '../components/footer/Footer'
 
 const { Scope } = require('../globalReferences');
 
@@ -42,15 +44,20 @@ export default class Template extends React.Component {
     const html = markdownRemark && markdownRemark.html ? markdownRemark.html : '';
 
     return (
-      <div className="docs-post-container">
-        <div className="docs-post">
-          <div
-            ref={this.setRef}
-            className="docs-post-content"
-            dangerouslySetInnerHTML={{ __html: html }}
-          />
-        </div>
-      </div>
+      <Fragment>
+        <Main>
+          <div className="docs-post-container">
+            <div className="docs-post">
+              <div
+                ref={this.setRef}
+                className="docs-post-content"
+                dangerouslySetInnerHTML={{ __html: html }}
+              />
+            </div>
+          </div>
+        </Main>
+        <Footer/>
+      </Fragment>
     );
   }
 }
