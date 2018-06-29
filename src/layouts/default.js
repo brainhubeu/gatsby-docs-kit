@@ -5,8 +5,6 @@ import { findMatchingPage } from '../utils/navigation';
 
 import Header from '../components/header/Header';
 import SideNav from '../components/sideNav/SideNav';
-import Main from '../components/main/Main';
-import Footer from '../components/footer/Footer';
 import createSideMenu, { hasSideMenu } from '../utils/sideMenu';
 import Seo from '../components/seo';
 import './index.scss';
@@ -76,8 +74,7 @@ class Layout extends React.Component {
         />
         {hasSideMenu(activeData) && <SideNav activeNavData={activeData} location={pathName+location.hash}/>}
         <div className="container">
-          <Main>{children}</Main>
-          <Footer/>
+          {children()}
         </div>
       </Fragment>
     );
