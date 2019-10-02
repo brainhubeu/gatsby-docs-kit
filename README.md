@@ -1,5 +1,8 @@
 # Gatsby Docs Kit
 
+[![npm](https://img.shields.io/npm/v/@brainhubeu/gatsby-docs-kit.svg)](https://www.npmjs.com/package/@brainhubeu/gatsby-docs-kit)
+[![npm](https://img.shields.io/npm/l/@brainhubeu/gatsby-docs-kit.svg)](https://www.npmjs.com/package/@brainhubeu/gatsby-docs-kit)
+
 ### Easy to Maintain Markdown/React Documentation Static Websites 
 
 Gatsby Docs Kit is a set of tools, extending [Gatsby](https://www.gatsbyjs.org/) to generate **gorgeous** documentation static website. Documentation source files are written in Markdown or as React components and configured with a single YAML/JSON5 configuration file.
