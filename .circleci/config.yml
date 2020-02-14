@@ -1,0 +1,22 @@
+version: 2
+jobs:
+  publish_package:
+    docker:
+      - image: circleci/node:10.19.0
+    steps:
+      - checkout
+      - run: yarn install --non-interactive
+      - run:
+          name: npm publish
+          command: |
+            echo "//registry.npmjs.org/:_authToken=${NPM_TOKEN}" > .npmrc
+            npm publish
+workflows:
+  version: 2
+  test_and_deploy:
+    jobs:
+      - publish_package:
+          filters:
+            branches:
+              only:
+                - master
