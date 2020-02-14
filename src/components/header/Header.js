@@ -1,10 +1,12 @@
+/* eslint-disable react/no-access-state-in-setstate, react/jsx-no-target-blank */
 import React from 'react';
 import classnames from 'classnames';
 import PropTypes from 'prop-types';
 import Link from 'gatsby-link';
-import menuPagesProptypes from '../../utils/menu-proptypes';
-import GithubIcon from './GithubIcon';
 
+import menuPagesProptypes from '../../utils/menu-proptypes';
+
+import GithubIcon from './GithubIcon';
 import styles from './header.module.scss';
 
 
@@ -98,15 +100,15 @@ class Header extends React.Component {
               </a>
             )}
             {this.state.mobileMenu && (
-                <button
-                  className={classnames([
-                    styles.header__mobileBtn,
-                    this.state.menuIsOpen && styles['header__mobileBtn--active'],
-                  ])}
-                  onClick={this.toggleMenu}
-                >
-                  <span className={styles.mobileBtn__hamburger} />
-                </button>
+              <button
+                className={classnames([
+                  styles.header__mobileBtn,
+                  this.state.menuIsOpen && styles['header__mobileBtn--active'],
+                ])}
+                onClick={this.toggleMenu}
+              >
+                <span className={styles.mobileBtn__hamburger} />
+              </button>
             )}
           </div>
         </div>

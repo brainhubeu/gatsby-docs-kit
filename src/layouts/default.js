@@ -1,8 +1,10 @@
+/* eslint-disable react/prop-types */
+
 import React, { Fragment } from 'react';
 import PropTypes from 'prop-types';
+
 import menuPagesPropTypes from '../utils/menu-proptypes';
 import { findMatchingPage } from '../utils/navigation';
-
 import Header from '../components/header/Header';
 import SideNav from '../components/sideNav/SideNav';
 import createSideMenu, { hasSideMenu } from '../utils/sideMenu';
