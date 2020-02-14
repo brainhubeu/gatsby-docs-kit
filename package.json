@@ -1,7 +1,7 @@
 {
   "name": "@brainhubeu/gatsby-docs-kit",
   "description": "Easy to Maintain Markdown/React Documentation Static Websites",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "author": "Brainhub",
   "license": "MIT",
   "dependencies": {
@@ -31,7 +31,7 @@
     "chokidar": "^2.1.8",
     "github-slugger": "^1.2.1",
     "glob": "^7.1.6",
-    "graphql-type-json": "^0.2.4",
+    "graphql-type-json": "^0.3.1",
     "js-yaml": "^3.13.1",
     "json5": "^1.0.1",
     "lodash": "^4.17.15",
