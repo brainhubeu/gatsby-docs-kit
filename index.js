@@ -4,9 +4,10 @@
  * Extending gatsby-transformer-remark
  */
 
+const path = require('path');
+
 const visit = require('unist-util-visit');
 const _ = require('lodash');
-const path = require('path');
 
 const isString = value => typeof value === 'string';
 
@@ -20,7 +21,7 @@ function findPageUrlByMarkdownAbsoluteFilePath(pages = [], absolutePath) {
   return _.chain(pages)
     .map(page =>
       (page.absolutePath && page.absolutePath === absolutePath && page.url)
-      || findPageUrlByMarkdownAbsoluteFilePath(page.sidemenu || page.items, absolutePath)
+      || findPageUrlByMarkdownAbsoluteFilePath(page.sidemenu || page.items, absolutePath),
     )
     .flattenDeep()
     .find(x => !!x)

@@ -43,4 +43,4 @@ module.exports = function(source) {
   }
 
   return compile(source, importPath);
-}
+};

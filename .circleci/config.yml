@@ -1,5 +1,14 @@
 version: 2
 jobs:
+  test:
+    docker:
+      - image: circleci/node:10.19.0
+    working_directory: ~/app
+    steps:
+      - checkout
+      - run: yarn install --non-interactive
+      - run: yarn lint
+
   publish_package:
     docker:
       - image: circleci/node:10.19.0
@@ -11,11 +20,15 @@ jobs:
           command: |
             echo "//registry.npmjs.org/:_authToken=${NPM_TOKEN}" > .npmrc
             npm publish
+
 workflows:
   version: 2
   test_and_deploy:
     jobs:
+      - test
       - publish_package:
+          requires:
+            - test
           filters:
             branches:
               only:

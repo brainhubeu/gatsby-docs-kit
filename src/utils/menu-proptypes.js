@@ -24,7 +24,7 @@ export default PropTypes.arrayOf(PropTypes.shape({
     items: PropTypes.arrayOf(PropTypes.shape({
       ...menuPropTypes,
       items: PropTypes.arrayOf(PropTypes.shape(
-        menuPropTypes
+        menuPropTypes,
       )),
     })),
   })),
