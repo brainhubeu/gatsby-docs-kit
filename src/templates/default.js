@@ -41,9 +41,6 @@ export default class Template extends React.Component {
 
 
   render() {
-    const { markdownRemark } = this.props.data;
-    const html = markdownRemark && markdownRemark.html ? markdownRemark.html : '';
-
     return (
       <Fragment>
         <Main>
@@ -52,7 +49,6 @@ export default class Template extends React.Component {
               <div
                 ref={this.setRef}
                 className="docs-post-content"
-                dangerouslySetInnerHTML={{ __html: html }}
               />
             </div>
           </div>
