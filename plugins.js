@@ -18,7 +18,7 @@ function pluginConfigFactory(config) {
   // TODO add comments here
   return [
     'gatsby-plugin-react-helmet',
-    'gatsby-plugin-postcss-sass',
+    'gatsby-plugin-sass',
     'gatsby-plugin-sharp',
     `gatsby-plugin-meta-redirect`,
     `gatsby-plugin-react-next`,
