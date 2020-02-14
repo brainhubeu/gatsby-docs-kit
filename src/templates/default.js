@@ -41,6 +41,9 @@ export default class Template extends React.Component {
 
 
   render() {
+    console.log('this.props Template', this.props);
+    const html = '';
+
     return (
       <Fragment>
         <Main>
@@ -49,6 +52,7 @@ export default class Template extends React.Component {
               <div
                 ref={this.setRef}
                 className="docs-post-content"
+                dangerouslySetInnerHTML={{ __html: html }}
               />
             </div>
           </div>
