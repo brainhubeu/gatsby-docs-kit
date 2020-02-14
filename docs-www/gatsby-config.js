@@ -1,6 +1,7 @@
 'use strict';
 
 const path = require('path');
+
 const pluginConfigFactory = require('@brainhubeu/gatsby-docs-kit/plugins');
 
 module.exports = {

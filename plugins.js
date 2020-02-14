@@ -4,15 +4,15 @@
 
 function pluginConfigFactory(config) {
   if (!config) {
-    throw new Error('Gatsby Docs Kit: No config specified. See your gatsby-config.js file.')
+    throw new Error('Gatsby Docs Kit: No config specified. See your gatsby-config.js file.');
   }
 
   if (!config.config) {
-    throw new Error('Gatsby Docs Kit: no `config` file path specified. See your gatsby-config.js file.')
+    throw new Error('Gatsby Docs Kit: no `config` file path specified. See your gatsby-config.js file.');
   }
 
   if (!config.resources) {
-    throw new Error('Gatsby Docs Kit: no `resources` pattern specified. See your gatsby-config.js file.')
+    throw new Error('Gatsby Docs Kit: no `resources` pattern specified. See your gatsby-config.js file.');
   }
 
   // TODO add comments here
@@ -78,4 +78,4 @@ function pluginConfigFactory(config) {
   ];
 }
 
-module.exports = pluginConfigFactory
+module.exports = pluginConfigFactory;

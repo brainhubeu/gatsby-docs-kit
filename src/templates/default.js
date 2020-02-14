@@ -8,8 +8,9 @@ import {
   LiveError,
   LivePreview,
 } from 'react-live';
+
 import Main from '../components/main/Main';
-import Footer from '../components/footer/Footer'
+import Footer from '../components/footer/Footer';
 
 const { Scope } = require('../globalReferences');
 
@@ -62,7 +63,7 @@ export default class Template extends React.Component {
   }
 }
 
-export const pageQuery = graphql`
+export const pageQuery = `
   query DocsPostByPath($relativePath: String!) {
     markdownRemark(fields: { relativePath: { eq: $relativePath } }) {
       html
