@@ -8,6 +8,7 @@ import {
   LiveError,
   LivePreview,
 } from 'react-live';
+import { graphql } from 'gatsby';
 
 import Main from '../components/main/Main';
 import Footer from '../components/footer/Footer';
@@ -63,7 +64,7 @@ export default class Template extends React.Component {
   }
 }
 
-export const pageQuery = `
+export const pageQuery = graphql`
   query($relativePath: String!) {
     markdownRemark(fields: { relativePath: { eq: $relativePath } }) {
       html

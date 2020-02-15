@@ -2,6 +2,7 @@
 
 import React, { Fragment } from 'react';
 import PropTypes from 'prop-types';
+import { graphql } from 'gatsby';
 
 import menuPagesPropTypes from '../utils/menu-proptypes';
 import { findMatchingPage } from '../utils/navigation';
@@ -85,8 +86,6 @@ class Layout extends React.Component {
 
 export default Layout;
 
-// @TODO Figure out way to avoid globals
-// eslint-disable-next-line no-undef
 export const query = graphql`
   query SiteTitleQuery {
     site {
