@@ -42,7 +42,7 @@ export default class Template extends React.Component {
 
   render() {
     console.log('this.props Template', this.props);
-    const html = '';
+    const html = _.get(this, 'props.data.markdownRemark.html', '');
 
     return (
       <Fragment>
@@ -64,7 +64,7 @@ export default class Template extends React.Component {
 }
 
 export const pageQuery = `
-  query DocsPostByPath($relativePath: String!) {
+  query($relativePath: String!) {
     markdownRemark(fields: { relativePath: { eq: $relativePath } }) {
       html
     }
