@@ -8,6 +8,7 @@ import {
   LiveError,
   LivePreview,
 } from 'react-live';
+import { graphql } from 'gatsby';
 
 import Main from '../components/main/Main';
 import Footer from '../components/footer/Footer';
@@ -41,8 +42,8 @@ export default class Template extends React.Component {
 
 
   render() {
-    const { markdownRemark } = this.props.data;
-    const html = markdownRemark && markdownRemark.html ? markdownRemark.html : '';
+    console.log('this.props Template', this.props);
+    const html = _.get(this, 'props.data.markdownRemark.html', '');
 
     return (
       <Fragment>
@@ -63,9 +64,8 @@ export default class Template extends React.Component {
   }
 }
 
-// eslint-disable-next-line no-undef
 export const pageQuery = graphql`
-  query DocsPostByPath($relativePath: String!) {
+  query($relativePath: String!) {
     markdownRemark(fields: { relativePath: { eq: $relativePath } }) {
       html
     }
