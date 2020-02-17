@@ -1,8 +1,7 @@
 'use strict';
+const _ = require('lodash');
 const url = require('url');
 const path = require('path');
-
-const _ = require('lodash');
 
 const NOT_MATCHING_URL = '/';
 

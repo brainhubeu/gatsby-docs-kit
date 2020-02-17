@@ -1,9 +1,8 @@
 'use strict';
 
+const glob = require('glob');
 const path = require('path');
 const { promisify } = require('util');
-
-const glob = require('glob');
 
 const globAsync = promisify(glob);
 
@@ -23,5 +22,7 @@ function loadPluginLayouts({ boundActionCreators }) {
     ));
 }
 
-module.exports = (...args) => Promise.resolve()
-  .then(() => loadPluginLayouts(...args));
+module.exports = (...args) => {
+  return Promise.resolve()
+    .then(() => loadPluginLayouts(...args));
+};

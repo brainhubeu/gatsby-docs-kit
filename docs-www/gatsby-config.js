@@ -1,8 +1,6 @@
 'use strict';
 
 const path = require('path');
-
-// eslint-disable-next-line import/no-unresolved
 const pluginConfigFactory = require('@brainhubeu/gatsby-docs-kit/plugins');
 
 module.exports = {

@@ -1,7 +1,6 @@
 'use strict';
-const path = require('path');
-
 const _ = require('lodash');
+const path = require('path');
 
 /**
  * Generate relative path to file

@@ -1,6 +1,5 @@
 'use strict';
 const path = require('path');
-
 const { fileExists } = require('./fs');
 
 const TEMPLATE_DEFAULT_FILE_NAME = 'default';

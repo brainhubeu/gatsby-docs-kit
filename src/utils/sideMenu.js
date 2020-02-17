@@ -43,6 +43,6 @@ export default createSideMenu;
 /**
  * Determines whether page has sidemenu
  * @param {Object} page
- * @return {Boolean} whether page has sidemenu
+ * @return {Boolean}
  */
 export const hasSideMenu = page => !!page && !!page.sidemenu && !!page.sidemenu.length;
