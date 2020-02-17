@@ -1,10 +1,9 @@
 'use strict';
 
 const fs = require('fs');
-const path = require('path');
-
 const mime = require('mime-types');
-const chokidar = require('chokidar');
+const path = require('path');
+const chokidar = require(`chokidar`);
 const JSON5Parser = require('json5').parse;
 const yamlParser = require('js-yaml').safeLoad;
 

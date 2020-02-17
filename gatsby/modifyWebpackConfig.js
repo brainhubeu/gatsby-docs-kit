@@ -1,7 +1,6 @@
 'use strict';
-const path = require('path');
-
-const _ = require('lodash');
+const path = require('path')
+const _ = require('lodash')
 
 const GLOBALS_FILE_PATH = 'src/globalReferences.js';
 
@@ -21,12 +20,13 @@ module.exports = ({ program, config }) => {
 
   // get current babel loader
   const babelLoader = config.resolve().module.loaders.find(loaderConfig => loaderConfig.loader === 'babel');
+  // path to directory that will need to babeled
+  const localSrcDirPath = path.resolve(path.join(__dirname, '../src'));
 
   // new loader config
   const gatsbyDocsKitBabelLoader = {
     ...babelLoader,
     test: new RegExp(`${_.escapeRegExp('/gatsby-docs-kit/src/')}.*jsx?$`),
-    // eslint-disable-next-line no-undefined
     exclude: undefined,
   };
 

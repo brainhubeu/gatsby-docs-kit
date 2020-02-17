@@ -1,19 +1,18 @@
 'use strict';
 
 const _ = require('lodash');
-
 const { getTemplatePath } = require('../utils/templates');
 const { isJavascriptFile } = require('../utils/mime');
-
 const getMenu = require('./grapql/getMenu');
 
 const DEFAULT_LAYOUT_ID = 'default';
 const MAIN_URL = '/';
 
 /**
- * Create redirection for '/' - if user hasn't specified main page, then
+ * Create redirection for '/' - if user hasn't specified main page, then 
  * @param {GatsbyActions} boundActionCreators
  * @param {String[]} createdUrls
+ * @return {String[]} array containing URL's of all created pages and redirection
  */
 function createMainPageRedirection(boundActionCreators, createdUrls = []) {
   const hasMainPage = !!createdUrls.find(uri => uri === MAIN_URL);
@@ -90,9 +89,7 @@ function createGatsbyPagesFromList(boundActionCreators, menuItems = [], inherite
   const createdUrls = menuItems
     .map(menuItem => {
       const view = {
-        template: menuItem.template
-          ? getTemplatePath(menuItem.template)
-          : (inheritedView.template || getTemplatePath()),
+        template: menuItem.template ? getTemplatePath(menuItem.template) : (inheritedView.template || getTemplatePath()),
         layout: menuItem.layout || inheritedView.layout || DEFAULT_LAYOUT_ID,
       };
 
@@ -109,6 +106,8 @@ function createGatsbyPagesFromList(boundActionCreators, menuItems = [], inherite
 }
 
 
-module.exports = ({ boundActionCreators, graphql }) => getMenu(graphql)
-  .then(menu => createGatsbyPagesFromList(boundActionCreators, menu))
-  .then((uris = []) => createMainPageRedirection(boundActionCreators, uris.filter(u => u)));
+module.exports = ({ boundActionCreators, graphql }) => {
+  return getMenu(graphql)
+    .then(menu => createGatsbyPagesFromList(boundActionCreators, menu))
+    .then((uris = []) => createMainPageRedirection(boundActionCreators, uris.filter(u => u)));
+};
