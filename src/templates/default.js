@@ -63,7 +63,8 @@ export default class Template extends React.Component {
   }
 }
 
-export const pageQuery = `
+// eslint-disable-next-line no-undef
+export const pageQuery = graphql`
   query DocsPostByPath($relativePath: String!) {
     markdownRemark(fields: { relativePath: { eq: $relativePath } }) {
       html
