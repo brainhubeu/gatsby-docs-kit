@@ -1,4 +1,7 @@
+/* eslint-disable react/prop-types */
+
 import React from 'react';
+
 import styles from './main.module.scss';
 
 const Main = ({ children }) => (
