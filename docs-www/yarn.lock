@@ -813,7 +813,7 @@
 
 "@brainhubeu/gatsby-docs-kit@https://github.com/RobertHebel/gatsby-docs-kit.git#upgrade-gatsby-to-v2":
   version "2.0.9"
-  resolved "https://github.com/RobertHebel/gatsby-docs-kit.git#0384d384d01d6d65463275a08ceb6da74fc53255"
+  resolved "https://github.com/RobertHebel/gatsby-docs-kit.git#ccde8828e17daef99c6330f338ca84cbc45c4440"
   dependencies:
     classnames "^2.2.6"
     gatsby "^2.19.17"
