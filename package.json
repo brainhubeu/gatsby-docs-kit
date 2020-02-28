@@ -1,7 +1,7 @@
 {
   "name": "@brainhubeu/gatsby-docs-kit",
   "description": "Easy to Maintain Markdown/React Documentation Static Websites",
-  "version": "3.0.0",
+  "version": "3.0.1",
   "author": "Brainhub",
   "license": "MIT",
   "scripts": {
@@ -9,22 +9,22 @@
   },
   "dependencies": {
     "classnames": "^2.2.6",
-    "gatsby": "^2.19.17",
+    "gatsby": "^2.19.23",
     "gatsby-link": "^2.2.29",
-    "gatsby-plugin-catch-links": "^2.1.25",
+    "gatsby-plugin-catch-links": "^2.1.26",
     "gatsby-plugin-favicon": "^3.1.6",
     "gatsby-plugin-layout": "^1.1.22",
     "gatsby-plugin-meta-redirect": "^1.1.1",
     "gatsby-plugin-react-helmet": "^3.1.22",
     "gatsby-plugin-sass": "^2.1.29",
     "gatsby-plugin-sharp": "^2.4.5",
-    "gatsby-remark-autolink-headers": "~2.0.18",
+    "gatsby-remark-autolink-headers": "~2.1.24",
     "gatsby-remark-copy-linked-files": "^2.1.37",
     "gatsby-remark-embed-snippet": "^4.1.22",
     "gatsby-remark-images": "^3.1.44",
     "gatsby-remark-prismjs": "^3.3.31",
     "gatsby-source-filesystem": "^2.1.48",
-    "gatsby-transformer-remark": "~2.5.0",
+    "gatsby-transformer-remark": "~2.6.53",
     "gatsby-transformer-yaml": "^2.2.25",
     "node-sass": "^4.13.1",
     "prismjs": "^1.19.0",
@@ -33,7 +33,7 @@
     "react-live": "^1.12.0"
   },
   "devDependencies": {
-    "babel-eslint": "^10.0.3",
+    "babel-eslint": "^10.1.0",
     "chokidar": "^3.3.1",
     "eslint": "^6.8.0",
     "eslint-config-brainhub": "^1.12.0",
@@ -44,12 +44,12 @@
     "json5": "^2.1.1",
     "lodash": "^4.17.15",
     "mime-types": "^2.1.26",
-    "unist-util-visit": "^2.0.1"
+    "unist-util-visit": "^2.0.2"
   },
   "peerDependencies": {
-    "gatsby": "^2.19.17",
-    "react": "^16.12.0",
-    "react-dom": "^16.12.0"
+    "gatsby": "^2.19.23",
+    "react": "^16.13.0",
+    "react-dom": "^16.13.0"
   },
   "publishConfig": {
     "access": "public"
