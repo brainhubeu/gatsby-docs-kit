@@ -2,7 +2,7 @@
 
 import React, { Fragment } from 'react';
 import PropTypes from 'prop-types';
-import { StaticQuery } from 'gatsby';
+import { StaticQuery, graphql } from 'gatsby';
 
 import menuPagesPropTypes from '../../utils/menu-proptypes';
 import { findMatchingPage } from '../../utils/navigation';
