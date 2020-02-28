@@ -812,8 +812,8 @@
     to-fast-properties "^2.0.0"
 
 "@brainhubeu/gatsby-docs-kit@https://github.com/RobertHebel/gatsby-docs-kit.git#upgrade-gatsby-to-v2":
-  version "2.0.7"
-  resolved "https://github.com/RobertHebel/gatsby-docs-kit.git#ac294a1d0bfeb6cab25ed468741365c47bf629dd"
+  version "2.0.9"
+  resolved "https://github.com/RobertHebel/gatsby-docs-kit.git#b0c65675230a69b14c1c94296ac386f4975f4cec"
   dependencies:
     classnames "^2.2.6"
     gatsby "^2.19.17"
