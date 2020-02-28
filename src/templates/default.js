@@ -43,9 +43,9 @@ export default class Template extends React.Component {
     setRef = ref => this.wrapper = ref;
 
 
-  render() {
-    const { markdownRemark } = this.props.data;
-    const html = markdownRemark && markdownRemark.html ? markdownRemark.html : '';
+    render() {
+      const { markdownRemark } = this.props.data;
+      const html = markdownRemark && markdownRemark.html ? markdownRemark.html : '';
 
       return (
         <Fragment>
