@@ -1,7 +1,7 @@
 {
   "name": "@brainhubeu/gatsby-docs-kit",
   "description": "Easy to Maintain Markdown/React Documentation Static Websites",
-  "version": "3.0.0",
+  "version": "3.0.1",
   "author": "Brainhub",
   "license": "MIT",
   "scripts": {
@@ -9,9 +9,9 @@
   },
   "dependencies": {
     "classnames": "^2.2.6",
-    "gatsby": "^2.19.17",
+    "gatsby": "^2.19.23",
     "gatsby-link": "^2.2.29",
-    "gatsby-plugin-catch-links": "^2.1.25",
+    "gatsby-plugin-catch-links": "^2.1.26",
     "gatsby-plugin-favicon": "^3.1.6",
     "gatsby-plugin-layout": "^1.1.22",
     "gatsby-plugin-meta-redirect": "^1.1.1",
@@ -33,7 +33,7 @@
     "react-live": "^1.12.0"
   },
   "devDependencies": {
-    "babel-eslint": "^10.0.3",
+    "babel-eslint": "^10.1.0",
     "chokidar": "^3.3.1",
     "eslint": "^6.8.0",
     "eslint-config-brainhub": "^1.12.0",
@@ -44,12 +44,12 @@
     "json5": "^2.1.1",
     "lodash": "^4.17.15",
     "mime-types": "^2.1.26",
-    "unist-util-visit": "^2.0.1"
+    "unist-util-visit": "^2.0.2"
   },
   "peerDependencies": {
-    "gatsby": "^2.19.17",
-    "react": "^16.12.0",
-    "react-dom": "^16.12.0"
+    "gatsby": "^2.19.23",
+    "react": "^16.13.0",
+    "react-dom": "^16.13.0"
   },
   "publishConfig": {
     "access": "public"
