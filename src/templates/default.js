@@ -1,5 +1,7 @@
 import React, { Fragment } from 'react';
 import _ from 'lodash';
+// dependency can be found in peer dependencies
+// eslint-disable-next-line import/no-unresolved
 import ReactDOM from 'react-dom';
 import PropTypes from 'prop-types';
 import {
@@ -8,6 +10,7 @@ import {
   LiveError,
   LivePreview,
 } from 'react-live';
+import { graphql } from 'gatsby';
 
 import Main from '../components/main/Main';
 import Footer from '../components/footer/Footer';
@@ -37,39 +40,55 @@ export default class Template extends React.Component {
     );
   }
 
-  setRef = ref => this.wrapper = ref;
+    setRef = ref => this.wrapper = ref;
 
 
   render() {
     const { markdownRemark } = this.props.data;
     const html = markdownRemark && markdownRemark.html ? markdownRemark.html : '';
 
-    return (
-      <Fragment>
-        <Main>
-          <div className="docs-post-container">
-            <div className="docs-post">
-              <div
-                ref={this.setRef}
-                className="docs-post-content"
-                dangerouslySetInnerHTML={{ __html: html }}
-              />
+      return (
+        <Fragment>
+          <Main>
+            <div className="docs-post-container">
+              <div className="docs-post">
+                <div
+                  ref={this.setRef}
+                  className="docs-post-content"
+                  dangerouslySetInnerHTML={{ __html: html }}
+                />
+              </div>
             </div>
-          </div>
-        </Main>
-        <Footer/>
-      </Fragment>
-    );
-  }
+          </Main>
+          <Footer/>
+        </Fragment>
+      );
+    }
 }
 
-// eslint-disable-next-line no-undef
 export const pageQuery = graphql`
-  query DocsPostByPath($relativePath: String!) {
-    markdownRemark(fields: { relativePath: { eq: $relativePath } }) {
-      html
+    query DocsPostByPath($relativePath: String!) {
+        markdownRemark(fields: { relativePath: { eq: $relativePath } }) {
+            html
+        }
+
+        site {
+            pathPrefix,
+            siteMetadata {
+                title
+                description
+                image
+                url
+                type
+                siteName
+                githubUrl
+            }
+        }
+
+        menu {
+            pages
+        }
     }
-  }
 `;
 
 Template.propTypes = {

@@ -18,10 +18,22 @@ function pluginConfigFactory(config) {
   // TODO add comments here
   return [
     'gatsby-plugin-react-helmet',
-    'gatsby-plugin-postcss-sass',
+    {
+      resolve: `gatsby-plugin-sass`,
+      options: {
+        cssLoaderOptions: {
+          camelCase: false,
+        },
+      },
+    },
     'gatsby-plugin-sharp',
-    `gatsby-plugin-meta-redirect`,
-    `gatsby-plugin-react-next`,
+    'gatsby-plugin-meta-redirect',
+    {
+      resolve: 'gatsby-plugin-layout',
+      options: {
+        component: require.resolve(`./src/components/layout`),
+      },
+    },
     {
       resolve: 'gatsby-source-filesystem',
       options: {

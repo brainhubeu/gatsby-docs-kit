@@ -13,30 +13,12 @@ function compile(source, importPath) {
 }
 
 /**
- * Get import path from webpack loader query
- * @param {String} querystring
- * @return {String} import path
- */
-function getImportPath(querystring) {
-  if (!querystring || typeof querystring !== 'string' || querystring.charAt(0) !== '?') {
-    return;
-  }
-
-  try {
-    const parsedQueryString = JSON.parse(querystring.substr(1));
-    return parsedQueryString.importPath;
-  } catch (e) {
-    return;
-  }
-}
-
-/**
  * Webpack loader to import user defined scope
  * @param {String} source source code
  * @return {String} import path
  */
 module.exports = function(source) {
-  const importPath = getImportPath(this.query);
+  const importPath = this.query ? this.query.importPath : null;
 
   if (!importPath || !fileExists(importPath)) {
     return source;
