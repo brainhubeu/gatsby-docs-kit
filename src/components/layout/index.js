@@ -2,7 +2,7 @@
 
 import React, { Fragment } from 'react';
 import PropTypes from 'prop-types';
-import { StaticQuery, graphql } from 'gatsby';
+import { StaticQuery } from 'gatsby';
 
 import menuPagesPropTypes from '../../utils/menu-proptypes';
 import { findMatchingPage } from '../../utils/navigation';
@@ -91,7 +91,7 @@ class Layout extends React.Component {
 const wrappedLayout = props => (
   <StaticQuery
     query={graphql`
-      query {
+      query SiteTitleQuery{
         site {
           pathPrefix,
           siteMetadata {
