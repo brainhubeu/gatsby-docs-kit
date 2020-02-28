@@ -2,16 +2,16 @@
 
 import React, { Fragment } from 'react';
 import PropTypes from 'prop-types';
-import { graphql } from 'gatsby';
+import { StaticQuery, graphql } from 'gatsby';
 
-import menuPagesPropTypes from '../utils/menu-proptypes';
-import { findMatchingPage } from '../utils/navigation';
-import Header from '../components/header/Header';
-import SideNav from '../components/sideNav/SideNav';
-import createSideMenu, { hasSideMenu } from '../utils/sideMenu';
-import Seo from '../components/seo';
+import menuPagesPropTypes from '../../utils/menu-proptypes';
+import { findMatchingPage } from '../../utils/navigation';
+import Header from '../header/Header';
+import SideNav from '../sideNav/SideNav';
+import createSideMenu, { hasSideMenu } from '../../utils/sideMenu';
+import Seo from '../seo';
+
 import './index.scss';
-
 import './codeBlock.scss';
 
 const getPathName = (location, pathNamePrefix = '') => {
@@ -34,7 +34,10 @@ const getPathName = (location, pathNamePrefix = '') => {
 
 class Layout extends React.Component {
   static propTypes = {
-    children: PropTypes.func,
+    children: PropTypes.oneOfType([
+      PropTypes.arrayOf(PropTypes.node),
+      PropTypes.node,
+    ]).isRequired,
     location: PropTypes.shape({
       pathname: PropTypes.string,
     }),
@@ -59,6 +62,7 @@ class Layout extends React.Component {
 
   render() {
     const { children, data, location } = this.props;
+
     const pathName = getPathName(location, this.props.data.site.pathPrefix);
 
     const activeData = findMatchingPage(this.props.data.menu.pages, pathName);
@@ -77,31 +81,31 @@ class Layout extends React.Component {
         />
         {hasSideMenu(activeData) && <SideNav activeNavData={activeData} location={pathName+location.hash}/>}
         <div className="container">
-          {children()}
+          {children}
         </div>
       </Fragment>
     );
   }
 }
 
-export default Layout;
-
-export const query = graphql`
-  query SiteTitleQuery {
-    site {
-      pathPrefix,
-      siteMetadata {
-        title
-        description
-        image
-        url
-        type
-        siteName
-        githubUrl
-      }
-    }
-
-    allMarkdownRemark {
+const wrappedLayout = props => (
+  <StaticQuery
+    query={graphql`
+      query {
+        site {
+          pathPrefix,
+          siteMetadata {
+            title
+            description
+            image
+            url
+            type
+            siteName
+            githubUrl
+          }
+        }
+        
+        allMarkdownRemark {
       edges {
         node {
           fileAbsolutePath
@@ -112,9 +116,17 @@ export const query = graphql`
           }
       }
     }
-
+    
     menu {
       pages
     }
-  }
-`;
+    
+      }
+    `}
+    /* eslint-disable-next-line react/jsx-no-bind */
+    render={data => <Layout data={data} {...props} />}
+  />
+);
+
+export default wrappedLayout;
+

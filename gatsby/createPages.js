@@ -5,7 +5,7 @@ const _ = require('lodash');
 const { getTemplatePath } = require('../utils/templates');
 const { isJavascriptFile } = require('../utils/mime');
 
-const getMenu = require('./grapql/getMenu');
+const getMenu = require('./graphql/getMenu');
 
 const DEFAULT_LAYOUT_ID = 'default';
 const MAIN_URL = '/';

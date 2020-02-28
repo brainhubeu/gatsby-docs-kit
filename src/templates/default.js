@@ -1,5 +1,7 @@
 import React, { Fragment } from 'react';
 import _ from 'lodash';
+// dependency can be found in peer dependencies
+// eslint-disable-next-line import/no-unresolved
 import ReactDOM from 'react-dom';
 import PropTypes from 'prop-types';
 import {
@@ -38,38 +40,54 @@ export default class Template extends React.Component {
     );
   }
 
-  setRef = ref => this.wrapper = ref;
+    setRef = ref => this.wrapper = ref;
 
 
-  render() {
-    console.log('this.props Template', this.props);
-    const html = _.get(this, 'props.data.markdownRemark.html', '');
+    render() {
+      const html = _.get(this, 'props.data.markdownRemark.html', '');
 
-    return (
-      <Fragment>
-        <Main>
-          <div className="docs-post-container">
-            <div className="docs-post">
-              <div
-                ref={this.setRef}
-                className="docs-post-content"
-                dangerouslySetInnerHTML={{ __html: html }}
-              />
+      return (
+        <Fragment>
+          <Main>
+            <div className="docs-post-container">
+              <div className="docs-post">
+                <div
+                  ref={this.setRef}
+                  className="docs-post-content"
+                  dangerouslySetInnerHTML={{ __html: html }}
+                />
+              </div>
             </div>
-          </div>
-        </Main>
-        <Footer/>
-      </Fragment>
-    );
-  }
+          </Main>
+          <Footer/>
+        </Fragment>
+      );
+    }
 }
 
 export const pageQuery = graphql`
-  query($relativePath: String!) {
-    markdownRemark(fields: { relativePath: { eq: $relativePath } }) {
-      html
+    query($relativePath: String!) {
+        markdownRemark(fields: { relativePath: { eq: $relativePath } }) {
+            html
+        }
+
+        site {
+            pathPrefix,
+            siteMetadata {
+                title
+                description
+                image
+                url
+                type
+                siteName
+                githubUrl
+            }
+        }
+
+        menu {
+            pages
+        }
     }
-  }
 `;
 
 Template.propTypes = {
