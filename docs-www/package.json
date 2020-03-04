@@ -1,7 +1,7 @@
 {
   "name": "@brainhubeu/gatsby-docs-kit-start",
   "description": "Gatsby-Docs-Kit starter repository",
-  "version": "0.0.7",
+  "version": "0.0.8",
   "author": "Brainhub",
   "license": "MIT",
   "scripts": {
@@ -15,8 +15,8 @@
   },
   "dependencies": {
     "@brainhubeu/gatsby-docs-kit": "https://github.com/RobertHebel/gatsby-docs-kit.git#upgrade-gatsby-to-v2",
-    "@brainhubeu/react-carousel": "^1.12.12",
-    "gatsby": "^2.19.23",
+    "@brainhubeu/react-carousel": "^1.12.16",
+    "gatsby": "^2.19.28",
     "gatsby-link": "^2.2.29"
   },
   "devDependencies": {
