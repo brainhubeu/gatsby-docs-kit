@@ -87,6 +87,12 @@ function pluginConfigFactory(config) {
         },
       },
     },
+    {
+      resolve: `gatsby-plugin-compile-es6-packages`,
+      options: {
+        modules: ['acorn-jsx', 'regexpu-core', 'unicode-match-property-ecmascript', 'unicode-match-property-value-ecmascript'],
+      },
+    },
   ];
 }
 
