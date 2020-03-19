@@ -12,6 +12,7 @@
     "gatsby": "^2.19.23",
     "gatsby-link": "^2.2.29",
     "gatsby-plugin-catch-links": "^2.1.26",
+    "gatsby-plugin-compile-es6-packages": "^2.1.0",
     "gatsby-plugin-favicon": "^3.1.6",
     "gatsby-plugin-layout": "^1.1.22",
     "gatsby-plugin-meta-redirect": "^1.1.1",
