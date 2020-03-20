@@ -818,9 +818,10 @@
     lodash "^4.17.13"
     to-fast-properties "^2.0.0"
 
-"@brainhubeu/gatsby-docs-kit@https://github.com/brainhubeu/gatsby-docs-kit.git#fix-ie":
-  version "3.0.6"
-  resolved "https://github.com/brainhubeu/gatsby-docs-kit.git#688bb1de15916ef210d304cdd5b0484dc9a03406"
+"@brainhubeu/gatsby-docs-kit@^3.0.7":
+  version "3.0.7"
+  resolved "https://registry.yarnpkg.com/@brainhubeu/gatsby-docs-kit/-/gatsby-docs-kit-3.0.7.tgz#6a196b461678bb3e3dcafc0d61714a841578a5eb"
+  integrity sha512-c8rqMn4ssWKd02fr9fDNyQ49EyLb8hwAoBuI/p4W850zlC4qoDCx3KenOrcuzPS3CmH86wD0k1P4Y3NdZp1W8w==
   dependencies:
     classnames "^2.2.6"
     gatsby "^2.19.23"
