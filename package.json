@@ -4,6 +4,9 @@
   "version": "3.0.10",
   "author": "Brainhub",
   "license": "MIT",
+  "engines": {
+    "node": ">=12"
+  },
   "scripts": {
     "lint": "./node_modules/.bin/eslint `git ls-files | grep '\\.js$' --color=never`"
   },
