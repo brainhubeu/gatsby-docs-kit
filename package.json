@@ -1,7 +1,7 @@
 {
   "name": "@brainhubeu/gatsby-docs-kit",
   "description": "Easy to Maintain Markdown/React Documentation Static Websites",
-  "version": "3.0.12",
+  "version": "3.0.13",
   "author": "Brainhub",
   "license": "MIT",
   "scripts": {
@@ -9,19 +9,19 @@
   },
   "dependencies": {
     "classnames": "^2.2.6",
-    "gatsby": "^2.20.12",
+    "gatsby": "^2.20.22",
     "gatsby-link": "^2.3.2",
     "gatsby-plugin-catch-links": "^2.2.1",
     "gatsby-plugin-compile-es6-packages": "^2.1.0",
     "gatsby-plugin-favicon": "^3.1.6",
     "gatsby-plugin-layout": "^1.2.1",
     "gatsby-plugin-meta-redirect": "^1.1.1",
-    "gatsby-plugin-react-helmet": "^3.2.1",
+    "gatsby-plugin-react-helmet": "^3.2.2",
     "gatsby-plugin-sass": "^2.2.1",
     "gatsby-plugin-sharp": "^2.5.4",
     "gatsby-remark-autolink-headers": "~2.2.1",
     "gatsby-remark-copy-linked-files": "^2.2.1",
-    "gatsby-remark-embed-snippet": "^4.2.1",
+    "gatsby-remark-embed-snippet": "^4.2.2",
     "gatsby-remark-images": "^3.2.2",
     "gatsby-remark-prismjs": "^3.4.1",
     "gatsby-source-filesystem": "^2.2.2",
@@ -48,7 +48,7 @@
     "unist-util-visit": "^2.0.2"
   },
   "peerDependencies": {
-    "gatsby": "^2.20.12",
+    "gatsby": "^2.20.22",
     "react": "^16.13.1",
     "react-dom": "^16.13.1"
   },
