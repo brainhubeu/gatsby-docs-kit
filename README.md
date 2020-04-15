@@ -1,8 +1,16 @@
 # Gatsby Docs Kit
 
-[![npm](https://img.shields.io/npm/v/@brainhubeu/gatsby-docs-kit.svg)](https://www.npmjs.com/package/@brainhubeu/gatsby-docs-kit)
-[![npm](https://img.shields.io/npm/l/@brainhubeu/gatsby-docs-kit.svg)](https://www.npmjs.com/package/@brainhubeu/gatsby-docs-kit)
+[![CircleCI](https://circleci.com/gh/brainhubeu/gatsby-docs-kit.svg?style=svg)](https://circleci.com/gh/brainhubeu/gatsby-docs-kit)
+[![Last commit](https://img.shields.io/github/last-commit/brainhubeu/gatsby-docs-kit.svg)](https://github.com/brainhubeu/gatsby-docs-kit/commits/master)
+[![license](https://img.shields.io/npm/l/@brainhubeu/gatsby-docs-kit.svg)](https://github.com/brainhubeu/gatsby-docs-kit/blob/master/LICENSE)
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](http://makeapullrequest.com)
+[![Renovate enabled](https://img.shields.io/badge/renovate-enabled-brightgreen.svg)](https://renovatebot.com/)
 
+[![Downloads](https://img.shields.io/npm/dm/@brainhubeu/gatsby-docs-kit?color=blue)](https://www.npmjs.com/package/@brainhubeu/gatsby-docs-kit)
+[![Activity](https://img.shields.io/github/commit-activity/m/brainhubeu/gatsby-docs-kit.svg)](https://img.shields.io/bundlephobia/min/@brainhubeu/gatsby-docs-kit?label=minified)
+[![Minified](https://img.shields.io/bundlephobia/min/@brainhubeu/gatsby-docs-kit?label=minified)](https://www.npmjs.com/package/@brainhubeu/gatsby-docs-kit)
+[![npm](https://img.shields.io/npm/v/@brainhubeu/gatsby-docs-kit.svg)](https://www.npmjs.com/package/@brainhubeu/gatsby-docs-kit)
+[![Contributors](https://img.shields.io/github/contributors/brainhubeu/gatsby-docs-kit?color=blue)](https://github.com/brainhubeu/gatsby-docs-kit/graphs/contributors)
 ### Easy to Maintain Markdown/React Documentation Static Websites 
 
 Gatsby Docs Kit is a set of tools, extending [Gatsby](https://www.gatsbyjs.org/) to generate **gorgeous** documentation static website. Documentation source files are written in Markdown or as React components and configured with a single YAML/JSON5 configuration file.
