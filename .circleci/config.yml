@@ -2,7 +2,7 @@ version: 2
 jobs:
   check_branch_name:
     docker:
-      - image: circleci/node:12.16.1
+      - image: circleci/node:12.16.2
     working_directory: ~/app
     steps:
       - run:
@@ -18,7 +18,7 @@ jobs:
             fi
   test:
     docker:
-      - image: circleci/node:13.12.0
+      - image: circleci/node:13.13.0
     working_directory: ~/app
     steps:
       - checkout
@@ -26,7 +26,7 @@ jobs:
       - run: yarn lint
   publish_package:
     docker:
-      - image: circleci/node:13.12.0
+      - image: circleci/node:13.13.0
     steps:
       - checkout
       - run: yarn install --non-interactive
