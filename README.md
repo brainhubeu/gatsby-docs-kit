@@ -7,7 +7,7 @@
 [![Renovate enabled](https://img.shields.io/badge/renovate-enabled-brightgreen.svg)](https://renovatebot.com/)
 
 [![Downloads](https://img.shields.io/npm/dm/@brainhubeu/gatsby-docs-kit?color=blue)](https://www.npmjs.com/package/@brainhubeu/gatsby-docs-kit)
-[![Activity](https://img.shields.io/github/commit-activity/m/brainhubeu/gatsby-docs-kit.svg)](https://img.shields.io/bundlephobia/min/@brainhubeu/gatsby-docs-kit?label=minified)
+[![Activity](https://img.shields.io/github/commit-activity/m/brainhubeu/gatsby-docs-kit.svg)](https://github.com/brainhubeu/gatsby-docs-kit/commits/master)
 [![Minified](https://img.shields.io/bundlephobia/min/@brainhubeu/gatsby-docs-kit?label=minified)](https://www.npmjs.com/package/@brainhubeu/gatsby-docs-kit)
 [![npm](https://img.shields.io/npm/v/@brainhubeu/gatsby-docs-kit.svg)](https://www.npmjs.com/package/@brainhubeu/gatsby-docs-kit)
 [![Contributors](https://img.shields.io/github/contributors/brainhubeu/gatsby-docs-kit?color=blue)](https://github.com/brainhubeu/gatsby-docs-kit/graphs/contributors)
