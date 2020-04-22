@@ -30,7 +30,7 @@ Ensure you have the latest version of [Node](https://nodejs.org/en/download/) in
 Clone repository:
 
 ```bash
-git clone git@github.com:brainhubeu/gatsby-docs-kit.git && cd example
+git clone git@github.com:brainhubeu/gatsby-docs-kit.git && mv gatsby-docs-kit/example docs-www && rm -rf gatsby-docs-kit
 ```
 
 Then run:
