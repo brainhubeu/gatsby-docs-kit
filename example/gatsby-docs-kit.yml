@@ -1,0 +1,4 @@
+- title: Home
+  dir: ./src
+  url: /
+  file: pages/landing.js

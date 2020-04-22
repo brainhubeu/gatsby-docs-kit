@@ -24,6 +24,3 @@
     ```bash
     npm run deploy:gh
     ```
-
-    > See more [HERE](../getting-started/publishing.md)
-
