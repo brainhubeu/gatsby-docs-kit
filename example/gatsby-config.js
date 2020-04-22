@@ -10,7 +10,7 @@ module.exports = {
     title: 'Brainhub template',
     description: 'Default template for open-source libraries',
     image: 'https://cdn-images-1.medium.com/max/1200/1*CLUFZFaXF6NG27NA3d_JkQ.jpeg',
-    url: 'https://screencloud.dev.brainhub.pl/',
+    url: 'https://brainhubeu.github.io/gatsby-docs-kit/',
     type: 'article',
     siteName: 'Brainhub template',
     githubUrl: 'https://github.com/brainhubeu',
