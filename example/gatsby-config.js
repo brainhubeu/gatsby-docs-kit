@@ -1,5 +1,3 @@
-'use strict';
-
 const path = require('path');
 
 // eslint-disable-next-line import/no-unresolved
