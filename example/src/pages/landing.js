@@ -12,9 +12,6 @@ const LandingPage = () => (
         <Link to="/docs/example/my-first-docs" className={styles.landing__btn}>
           <span>Get started!</span>
         </Link>
-        <Link to="/tutorial" className={styles['landing__btn--alt']}>
-          <span>Take the Tutorial</span>
-        </Link>
       </div>
     </div>
   </div>
