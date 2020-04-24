@@ -1,5 +1,3 @@
-'use strict';
-
 const path = require('path');
 
 // eslint-disable-next-line import/no-unresolved
@@ -7,13 +5,13 @@ const pluginConfigFactory = require('@brainhubeu/gatsby-docs-kit/plugins');
 
 module.exports = {
   siteMetadata: {
-    title: 'Gatsby Docs Kit',
-    description: 'Easy to Maintain Markdown/React Documentation Static Websites - starter',
+    title: 'Brainhub template',
+    description: 'Default template for open-source libraries',
     image: 'https://cdn-images-1.medium.com/max/1200/1*CLUFZFaXF6NG27NA3d_JkQ.jpeg',
     url: 'https://brainhubeu.github.io/gatsby-docs-kit/',
     type: 'article',
-    siteName: 'Gatsby Docs Kit',
-    githubUrl: 'https://github.com/brainhubeu/gatsby-docs-kit',
+    siteName: 'Brainhub template',
+    githubUrl: 'https://github.com/brainhubeu',
   },
 
   // URL prefix on production environment. For more info see https://www.gatsbyjs.org/docs/path-prefix/

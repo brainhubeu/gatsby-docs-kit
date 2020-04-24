@@ -4,7 +4,7 @@
   file: pages/landing.js
 
 - title: DOCS
-  dir: ../docs
+  dir: ./docs
   url: docs
   sidemenu:
     - title: Getting Started

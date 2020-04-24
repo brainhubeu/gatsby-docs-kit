@@ -27,10 +27,10 @@ Gatsby Docs Kit is a set of tools, extending [Gatsby](https://www.gatsbyjs.org/)
 
 Ensure you have the latest version of [Node](https://nodejs.org/en/download/) installed. We also recommend you install [Yarn](https://yarnpkg.com/en/docs/install) as well.
 
-Clone starter repository:
+Clone repository:
 
 ```bash
-git clone git@github.com:brainhubeu/gatsby-docs-kit-starter.git docs-www && cd docs-www && rm -rf .git
+git clone git@github.com:brainhubeu/gatsby-docs-kit.git && mv gatsby-docs-kit/example docs-www && rm -rf gatsby-docs-kit
 ```
 
 Then run:
@@ -50,7 +50,7 @@ Run the local webserver via `yarn develop`;
 The example site is available at http://localhost:8000. You should see the example site loaded in your web browser.
 Also visit http://localhost:8000/___graphql to explore your site's GraphQL data and schema.
 
-Then go to `../docs` to edit and write awesome docs!.
+Then go to `./docs` to edit and write awesome docs!.
 
 ## Deploy
 
