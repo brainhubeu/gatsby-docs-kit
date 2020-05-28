@@ -1,17 +1,34 @@
-# Gatsby Docs Kit
+<br/>
+<h1 align="center">
+  Gatsby Docs Kit
+</h1>
 
-[![CircleCI](https://circleci.com/gh/brainhubeu/gatsby-docs-kit.svg?style=svg)](https://circleci.com/gh/brainhubeu/gatsby-docs-kit)
-[![Last commit](https://img.shields.io/github/last-commit/brainhubeu/gatsby-docs-kit.svg)](https://github.com/brainhubeu/gatsby-docs-kit/commits/master)
-[![license](https://img.shields.io/npm/l/@brainhubeu/gatsby-docs-kit.svg)](https://github.com/brainhubeu/gatsby-docs-kit/blob/master/LICENSE)
-[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](http://makeapullrequest.com)
-[![Renovate enabled](https://img.shields.io/badge/renovate-enabled-brightgreen.svg)](https://renovatebot.com/)
+<p align="center">
+  Easy to Maintain Markdown/React Documentation Static Websites
+</p>
 
-[![Downloads](https://img.shields.io/npm/dm/@brainhubeu/gatsby-docs-kit?color=blue)](https://www.npmjs.com/package/@brainhubeu/gatsby-docs-kit)
-[![Activity](https://img.shields.io/github/commit-activity/m/brainhubeu/gatsby-docs-kit.svg)](https://github.com/brainhubeu/gatsby-docs-kit/commits/master)
-[![Minified](https://img.shields.io/bundlephobia/min/@brainhubeu/gatsby-docs-kit?label=minified)](https://www.npmjs.com/package/@brainhubeu/gatsby-docs-kit)
-[![npm](https://img.shields.io/npm/v/@brainhubeu/gatsby-docs-kit.svg)](https://www.npmjs.com/package/@brainhubeu/gatsby-docs-kit)
-[![Contributors](https://img.shields.io/github/contributors/brainhubeu/gatsby-docs-kit?color=blue)](https://github.com/brainhubeu/gatsby-docs-kit/graphs/contributors)
-### Easy to Maintain Markdown/React Documentation Static Websites 
+<p align="center">
+  <strong>
+    <a href="https://brainhubeu.github.io/gatsby-docs-kit/">Live code demo</a> | 
+    <a href="https://brainhub.eu/contact/">Hire us</a>
+  </strong>
+</p>
+
+<div align="center">
+
+  [![CircleCI](https://circleci.com/gh/brainhubeu/gatsby-docs-kit.svg?style=svg)](https://circleci.com/gh/brainhubeu/gatsby-docs-kit)
+  [![Last commit](https://img.shields.io/github/last-commit/brainhubeu/gatsby-docs-kit.svg)](https://github.com/brainhubeu/gatsby-docs-kit/commits/master)
+  [![license](https://img.shields.io/npm/l/@brainhubeu/gatsby-docs-kit.svg)](https://github.com/brainhubeu/gatsby-docs-kit/blob/master/LICENSE)
+  [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](http://makeapullrequest.com)
+  [![Renovate enabled](https://img.shields.io/badge/renovate-enabled-brightgreen.svg)](https://renovatebot.com/)
+
+  [![Downloads](https://img.shields.io/npm/dm/@brainhubeu/gatsby-docs-kit?color=blue)](https://www.npmjs.com/package/@brainhubeu/gatsby-docs-kit)
+  [![Activity](https://img.shields.io/github/commit-activity/m/brainhubeu/gatsby-docs-kit.svg)](https://github.com/brainhubeu/gatsby-docs-kit/commits/master)
+  [![Minified](https://img.shields.io/bundlephobia/min/@brainhubeu/gatsby-docs-kit?label=minified)](https://www.npmjs.com/package/@brainhubeu/gatsby-docs-kit)
+  [![npm](https://img.shields.io/npm/v/@brainhubeu/gatsby-docs-kit.svg)](https://www.npmjs.com/package/@brainhubeu/gatsby-docs-kit)
+  [![Contributors](https://img.shields.io/github/contributors/brainhubeu/gatsby-docs-kit?color=blue)](https://github.com/brainhubeu/gatsby-docs-kit/graphs/contributors)
+</div>
+
 
 Gatsby Docs Kit is a set of tools, extending [Gatsby](https://www.gatsbyjs.org/) to generate **gorgeous** documentation static website. Documentation source files are written in Markdown or as React components and configured with a single YAML/JSON5 configuration file.
 
