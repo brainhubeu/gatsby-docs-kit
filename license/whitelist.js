@@ -1,6 +1,7 @@
 /* Provide a list of whitelisted licenses for the project below */
 const whitelist = [
   '(Apache-2.0 OR MPL-1.1)',
+  '(BSD-2-Clause OR MIT OR Apache-2.0)',
   '(BSD-2-Clause OR WTFPL)',
   '(CC-BY-4.0 AND MIT)',
   '(MIT AND BSD-3-Clause)',
@@ -8,6 +9,7 @@ const whitelist = [
   '(MIT AND Zlib)',
   '(MIT OR Apache-2.0)',
   '(MIT OR CC0-1.0)',
+  '(MIT OR WTFPL)',
   '(Unlicense OR Apache-2.0)',
   '(WTFPL OR MIT)',
   '0BSD',
