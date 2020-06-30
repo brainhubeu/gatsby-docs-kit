@@ -23,6 +23,7 @@ jobs:
     steps:
       - checkout
       - run: yarn install --non-interactive
+      - run: yarn danger ci --failOnErrors --id @brainhubeu/react-carousel
       - run: yarn lint
   publish_package:
     docker:
