@@ -2,7 +2,7 @@ version: 2
 jobs:
   check_branch_name:
     docker:
-      - image: circleci/node:12.18.2
+      - image: circleci/node:12.22.1
     working_directory: ~/app
     steps:
       - run:
