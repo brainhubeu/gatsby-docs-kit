@@ -1,7 +1,7 @@
 {
   "name": "@brainhubeu/gatsby-docs-kit",
   "description": "Easy to Maintain Markdown/React Documentation Static Websites",
-  "version": "3.2.9",
+  "version": "3.2.10",
   "author": "Brainhub",
   "license": "MIT",
   "scripts": {
@@ -25,7 +25,7 @@
     "gatsby-remark-images": "^3.3.23",
     "gatsby-remark-prismjs": "^3.5.10",
     "gatsby-source-filesystem": "^2.3.23",
-    "gatsby-transformer-remark": "~2.7.5",
+    "gatsby-transformer-remark": "~5.25.0",
     "gatsby-transformer-yaml": "^2.4.10",
     "node-sass": "^4.14.1",
     "prismjs": "^1.20.0",
