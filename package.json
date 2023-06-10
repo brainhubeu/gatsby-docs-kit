@@ -1,7 +1,7 @@
 {
   "name": "@brainhubeu/gatsby-docs-kit",
   "description": "Easy to Maintain Markdown/React Documentation Static Websites",
-  "version": "3.2.9",
+  "version": "3.2.10",
   "author": "Brainhub",
   "license": "MIT",
   "scripts": {
@@ -9,7 +9,7 @@
   },
   "dependencies": {
     "classnames": "^2.2.6",
-    "gatsby": "^2.24.15",
+    "gatsby": "^4.0.0",
     "gatsby-link": "^2.4.13",
     "gatsby-plugin-catch-links": "^2.3.11",
     "gatsby-plugin-compile-es6-packages": "^2.1.0",
@@ -48,7 +48,7 @@
     "unist-util-visit": "^2.0.3"
   },
   "peerDependencies": {
-    "gatsby": "^2.24.15",
+    "gatsby": "^4.0.0",
     "react": "^16.13.1",
     "react-dom": "^16.13.1"
   },
