@@ -1,7 +1,7 @@
 {
   "name": "@brainhubeu/gatsby-docs-kit-start",
   "description": "Gatsby-Docs-Kit starter repository",
-  "version": "0.0.10",
+  "version": "0.0.11",
   "author": "Brainhub",
   "license": "MIT",
   "scripts": {
@@ -24,6 +24,6 @@
   "devDependencies": {
     "eslint": "^6.8.0",
     "eslint-config-brainhub": "^1.13.0",
-    "gh-pages": "^2.2.0"
+    "gh-pages": "^5.0.0"
   }
 }
