@@ -1,7 +1,7 @@
 {
   "name": "starter",
   "description": "Gatsby-Docs-Kit starter repository",
-  "version": "0.0.20",
+  "version": "0.0.21",
   "author": "Brainhub",
   "license": "MIT",
   "scripts": {
@@ -15,15 +15,15 @@
   },
   "dependencies": {
     "@brainhubeu/gatsby-docs-kit": "^3.2.8",
-    "gatsby": "^2.24.15",
-    "gatsby-link": "^2.4.13",
-    "react": "^16.13.1",
-    "react-dom": "^16.13.1"
+    "gatsby": "^2.32.13",
+    "gatsby-link": "^2.11.0",
+    "react": "^16.14.0",
+    "react-dom": "^16.14.0"
   },
   "devDependencies": {
     "babel-eslint": "^10.1.0",
     "eslint": "^6.8.0",
-    "eslint-config-brainhub": "^1.13.0",
+    "eslint-config-brainhub": "^1.14.0",
     "gh-pages": "^2.2.0"
   }
 }
